@@ -1,0 +1,189 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Space Mono";
+  font-weight: 700;
+}
+
+body {
+  height: 100vh;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.input-container {
+  position: relative;
+}
+
+.dollar {
+  width: 11px;
+  height: 17px;
+  background: center/cover no-repeat url("../images/icon-dollar.svg");
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.person {
+  width: 13px;
+  height: 16px;
+  background: center/cover no-repeat url("../images/icon-person.svg");
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  background-color: hsl(189deg, 41%, 97%);
+  border-radius: 5px;
+  border: none;
+  text-align: right;
+  padding: 0 20px;
+  color: hsl(183deg, 100%, 15%);
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  color: hsl(186deg, 14%, 43%);
+  margin-bottom: 5px;
+}
+
+.selected-btn {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+}
+
+button {
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(183deg, 100%, 15%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: inherit;
+  font-family: inherit;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.container {
+  height: 100%;
+  padding-top: 50px;
+  background-color: hsl(185deg, 41%, 84%);
+}
+.container .logo {
+  width: 100px;
+  height: 100px;
+  background: center/contain no-repeat url("../images/logo.svg");
+  margin: 0 auto;
+}
+.container .calculator {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 30px;
+  padding: 30px;
+}
+.container .calculator .article-1 button:hover,
+.container .calculator .article-1 button:active {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+}
+.container .calculator .article-1 .pop-up-text-container {
+  display: flex;
+  justify-content: space-between;
+}
+.container .calculator .article-1 .pop-up-text-container .pop-up-text {
+  color: rgba(255, 0, 0, 0.5);
+}
+.container .calculator .article-1 .hide {
+  opacity: 0;
+}
+.container .calculator .tip-btns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.container .calculator .article-2 {
+  background-color: hsl(183deg, 100%, 15%);
+  padding: 50px 30px;
+  border-radius: 20px;
+}
+.container .calculator .article-2 .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .calculator .article-2 .tip-amount,
+.container .calculator .article-2 .total-amount {
+  font-size: 3rem;
+  color: hsl(172deg, 67%, 45%);
+}
+.container .calculator .article-2 button {
+  width: 100%;
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+  text-transform: uppercase;
+}
+.container .calculator .article-2 .disabled {
+  opacity: 0.2;
+  cursor: default;
+}
+.container .calculator .article-2 .disabled:hover {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+}
+.container .calculator .article-2 label {
+  color: hsl(0deg, 0%, 100%);
+  width: 100%;
+}
+.container .calculator .article-2 p {
+  font-size: 0.9rem;
+  color: hsl(184deg, 14%, 56%);
+}
+
+@media (min-width: 1000px) {
+  .calculator {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  .calculator .article-1 {
+    width: 50%;
+  }
+  .calculator .article-1 .tip-btns {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .calculator .article-2 {
+    width: 50%;
+  }
+  .calculator .article-2 button {
+    margin-top: 100px;
+  }
+  .calculator .article-2 button:hover {
+    background-color: hsl(185deg, 41%, 84%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

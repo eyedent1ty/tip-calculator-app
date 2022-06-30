@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <link rel="stylesheet" href="dist/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="logo"></div>
+      <div class="calculator">
+        <article class="article-1 mb-40">
+          <div class="user-input mb-40">
+            <label>Bill</label>
+            <div class="input-container">
+              <div class="dollar"></div>
+              <input id="bill" type="number" placeholder="0" />
+            </div>
+          </div>
+          <label>Select Tip %</label>
+          <section class="tip-btns mb-40">
+            <button type="button">5%</button>
+            <button type="button">10%</button>
+            <button type="button">15%</button>
+            <button type="button">25%</button>
+            <button type="button">50%</button>
+            <input id="custom-tip" type="number" placeholder="Custom" />
+          </section>
+          <section>
+            <div class="pop-up-text-container">
+              <label>Number of People</label>
+              <label class="pop-up-text hide">Can't be zero</label>
+            </div>
+            <div class="input-container">
+              <div class="person"></div>
+              <input id="number-of-people" type="number" placeholder="0" />
+            </div>
+          </section>
+        </article>
+        <article class="article-2">
+          <section class="row mb-40">
+            <div>
+              <label>Tip Amount</label>
+              <p>/ person</p>
+            </div>
+            <p class="tip-amount">$0.00</p>
+          </section>
+          <section class="row mb-40">
+            <div>
+              <label>Total</label>
+              <p>/ person</p>
+            </div>
+            <p class="total-amount">$0.00</p>
+          </section>
+          <button id="reset" class="disabled" disabled type="button">
+            Reset
+          </button>
+        </article>
+      </div>
+    </main>
+    <script src="app/js/script.js"></script>
+  </body>
+</html>

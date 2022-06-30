@@ -1,0 +1,191 @@
+@import 'globals';
+@import 'variables';
+
+body {
+  height: 100vh;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.input-container {
+  position: relative;
+}
+
+.dollar {
+  width: 11px;
+  height: 17px;
+  background: center / cover no-repeat url('../images/icon-dollar.svg');
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.person {
+  width: 13px;
+  height: 16px;
+  background: center / cover no-repeat url('../images/icon-person.svg');
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  background-color: $veryLightGrayishCyan;
+  border-radius: 5px;
+  border: none;
+  text-align: right;
+  padding: 0 20px;
+  color: $veryDarkCyan;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  color: $darkGrayishCyan;
+  margin-bottom: 5px;
+}
+
+.selected-btn {
+  background-color: $strongCyan;
+  color: $veryDarkCyan;
+}
+
+button {
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: $veryDarkCyan;
+  color: $white;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.container {
+  height: 100%;
+  padding-top: 50px;
+  background-color: $lightGrayishCyan;
+
+  .logo {
+    width: 100px;
+    height: 100px;
+    background: center / contain no-repeat url('../images/logo.svg');
+    margin: 0 auto;
+  }
+
+  .calculator {
+    background-color: $white;
+    border-radius: 30px;
+    padding: 30px;
+
+    .article-1 {
+      button:hover,
+      button:active {
+        background-color: $strongCyan;
+        color: $veryDarkCyan;
+      }
+
+      .pop-up-text-container {
+        display: flex;
+        justify-content: space-between;
+
+        .pop-up-text {
+          color: rgba(255, 0, 0, 0.5);
+        }
+      }
+
+      .hide {
+        opacity: 0;
+      }
+    }
+
+    .tip-btns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .article-2 {
+      background-color: $veryDarkCyan;
+      padding: 50px 30px;
+      border-radius: 20px;
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .tip-amount,
+      .total-amount {
+        font-size: 3rem;
+        color: $strongCyan;
+      }
+
+      button {
+        width: 100%;
+        background-color: $strongCyan;
+        color: $veryDarkCyan;
+        text-transform: uppercase;
+      }
+
+      .disabled {
+        opacity: 0.2;
+        cursor: default;
+      }
+
+      .disabled:hover {
+        background-color: $strongCyan;
+        color: $veryDarkCyan;
+      }
+
+      label {
+        color: $white;
+        width: 100%;
+      }
+
+      p {
+        font-size: 0.9rem;
+        color: $grayishCyan;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .calculator {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    .article-1 {
+      width: 50%;
+      .tip-btns {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .article-2 {
+      width: 50%;
+      button {
+        margin-top: 100px;
+      }
+
+      button:hover {
+        background-color: $lightGrayishCyan;
+      }
+    }
+  }
+}
