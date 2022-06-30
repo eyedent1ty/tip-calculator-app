@@ -11,7 +11,7 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/eyedent1ty/tip-calculator-app)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://eyedent1ty-tip-calculator-app.netlify.app)
 
 ### Built with
 
